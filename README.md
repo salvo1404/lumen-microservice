@@ -108,7 +108,20 @@ When an player is added, updated or deleted, the service will broadcast the even
 The implementation is based on **Pub/Sub** paradigm.
 
 At each event, the application sends a notification message to the listeners over a "channel" ( websocket ) which contains
-entity information and a status attribute ( added, updated, deleted )
+entity information and a status attribute ( added, updated, deleted ).
+```$xslt
+{
+  "player": {
+    "name": "Charles Smith",
+    "role": "Point Guard",
+    "email": "charles.smith@gmail.com",
+    "updated_at": "2019-09-15 07:56:10",
+    "created_at": "2019-09-15 07:56:10",
+    "id": 26
+  },
+  "status": "created"
+}
+```
 
 This logic is built in the class PlayerPubSub ( src\app\Events\PlayerPubSub )
 
@@ -117,7 +130,7 @@ Lumen supports several broadcast drivers out of the box: Pusher Channels, Redis,
 **Pusher** 
 
 If you want to use pusher as broadcast provider, create an app on [pusher.com](https://pusher.com/) and add your app keys to your .env file.
-Here s some screenshots of broadcasted events seen through debug console in pusher.com
+Then change your BROADCAST_DRIVER value to be 'pusher'
 
 ### **Testing**
 A separate docker mysql ( mysql-test ) image is used to run Unit Tests.
