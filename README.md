@@ -79,7 +79,7 @@ A simple API Blueprint doc is available [here](https://lumenmicroserviceapis.doc
 
 The Repository Pattern is one of the most popular patterns to create an enterprise level application.
 
-In simple terms, a repository basically works as a mediator between the business logic layer and the data access layer of the application.
+In simple terms, a repository works as a mediator between the business logic layer and the data access layer of the application.
 
 Using the Repository Pattern has many advantages:
 
@@ -118,11 +118,6 @@ Lumen supports several broadcast drivers out of the box: Pusher Channels, Redis,
 
 If you want to use pusher as broadcast provider, create an app on [pusher.com](https://pusher.com/) and add your app keys to your .env file.
 Here s some screenshots of broadcasted events seen through debug console in pusher.com
-
-### **Data Response structure**
-
-This is the Player data structure
-
 
 ### **Testing**
 A separate docker mysql ( mysql-test ) image is used to run Unit Tests.
