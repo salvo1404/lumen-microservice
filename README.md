@@ -84,6 +84,7 @@ Model-View-Repository-Controller
 When an player is added, updated or deleted, the service will broadcast the event to other microservices.
 
 The implementation is based on **Pub/Sub** paradigm.
+
 At each event, the application sends a notification message to the listeners over a "channel" ( websocket ) which contains
 entity information and a status attribute ( added, updated, deleted )
 
