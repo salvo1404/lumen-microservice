@@ -83,7 +83,7 @@ The Repository Pattern is one of the most popular patterns to create an enterpri
 
 In simple terms, a repository works as a mediator between the business logic layer and the data access layer of the application.
 
-![Repository Pattern Architecture](./RepositoryPattern.png? "This is the title")
+![Repository Pattern Architecture](./RepositoryPattern.png? "Repository Pattern Architecture")
 
 Using the Repository Pattern has many advantages:
 
@@ -135,6 +135,9 @@ Lumen supports several broadcast drivers out of the box: Pusher Channels, Redis,
 
 If you want to use pusher as broadcast provider, create an app on [pusher.com](https://pusher.com/) and add your app keys to your .env file.
 Then change your BROADCAST_DRIVER value to be 'pusher'.
+
+![Pusher Broadcast Message](./PusherBroadcastMessage.png? "Pusher Broadcast Message")
+
 
 ### **Testing**
 A separate docker mysql ( mysql-test ) image is used to run Unit Tests.
