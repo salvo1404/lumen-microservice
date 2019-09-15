@@ -59,11 +59,7 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 
 ## **Microservice Description**
 
-Microservice in Lumen Framework version v5.8.13
-
-### **Repository Pattern**
-
-Model-View-Repository-Controller
+This is a microservice built in Lumen Framework version v5.8.13
 
 ### **API endpoints**
 
@@ -79,18 +75,26 @@ The application integrates 5 API endpoints that allow the user to:
 
 A simple API Blueprint doc is available [here](https://lumenmicroserviceapis.docs.apiary.io/)
 
+### **Repository Pattern**
+
+Model-View-Repository-Controller
+
 ### **Broadcasting**
 
 When an player is added, updated or deleted, the service will broadcast the event to other microservices.
-Laravel supports several broadcast drivers out of the box: Pusher Channels, Redis, and a log driver for local development and debugging.
 
-The broadcast provider of choice is pusher.
-Create an app on pusher.com to deug the functionality and your app keys to your .env 
-Here s some screenshots of the broadcasted events seen through debug console in pusher.com
+The implementation is based on **Pub/Sub** paradigm.
+At each event, the application sends a notification message to the listeners over a "channel" ( websocket ) which contains
+entity information and a status attribute ( added, updated, deleted )
 
-**Pusher.com** 
+This logic is built in the class PlayerPubSub ( src\app\Events\PlayerPubSub )
 
-1. Create a new directory in which yo
+Lumen supports several broadcast drivers out of the box: Pusher Channels, Redis, and a log driver for local development.
+
+**Pusher** 
+
+If you want to use pusher as broadcast provider, create an app on [pusher.com](https://pusher.com/) and add your app keys to your .env file.
+Here s some screenshots of broadcasted events seen through debug console in pusher.com
 
 ### **Data structure**
 
@@ -101,3 +105,18 @@ This is the Player data structure
 ### **Testing**
 A separate docker mysql ( mysql-test ) image is used to run Unit Tests.
 
+The testing environment variables are configured in the phpunit.xml file as well as specified in .env.testing file.
+
+The class PlayerControllerTest ( src\tests\Feature\PlayerControllerTest ) covers PlayerController basic functionality
+such as HTTPS responses to JSON API endpoints.
+
+More Unit tests should be added to focus on PlayerRepository functions.
+
+After each test the database is reset so that data from a previous test does not interfere with subsequent tests.
+This functionality is provided by the use of the trait DatabaseMigrations which rollback the database after each test and migrate it before the next one.
+
+To run Unit Tests from your project root, simply run 
+```
+    $ docker-compose exec microservice bash
+    $ ./vendor/bin/phpunit
+```
