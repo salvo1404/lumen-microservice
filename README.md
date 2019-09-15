@@ -44,7 +44,7 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 2. After the whole stack is up, enter the app container and install the lumen vendor libraries:
 
     ```
-    $ docker exec -it microservice bash
+    $ docker-compose exec microservice bash
     $ composer install
     ```
 
@@ -57,47 +57,37 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 
 3. Navigate to [http://localhost](http://localhost) to access the application.
 
-**Default configuration values** 
-
-The following values should be replaced in your `.env` file if you're willing to keep them as defaults:
-    
-    DB_HOST=mysql
-    DB_PORT=3306
-    DB_DATABASE=appdb
-    DB_USERNAME=user
-    DB_PASSWORD=myuserpass
-    
 ## **Microservice Description**
 
-This is a dockerized stack for a Lumen microservice, consisted of the following containers:
--  **microservice**, PHP application container
+Microservice in Lumen Framework version v5.8.13
 
-        PHP7.3 PHP7.3-fpm, Composer, NPM, Node.js v8.x
-    
--  **mysql**, MySQL database container ([mysql](https://hub.docker.com/_/mysql/) official Docker image)
--  **mysql-test**, MySQL database container used for testing ( PHPUnit )
--  **nginx**, Nginx container ([nginx](https://hub.docker.com/_/nginx/) official Docker image)
+#### **Design Pattern**
 
-#### **Directory Structure**
-```
-+-- .docker
-|   +-- nginx
-|       +-- nginx.conf
-|   +-- Dockerfile
-+-- src <project root>
-+-- .dockerignore
-+-- .gitignore
-+-- docker-compose.yml
-+-- Lumen Microservice.postman_collection.json
-+-- readme.md <this file>
-```
+Model-View-Repository-Controller
 
-### **Setup instructions**
+### **API endpoints**
+
+Available endpoints
+
+**Documentation:**
+A simple doc of the endpoints is available here  
+
+### **Broadcasting**
 
 **Prerequisites:** 
 
 * Depending on your OS, the appropriate version of Docker Community Edition has to be installed on your machine.  ([Download Docker Community Edition](https://hub.docker.com/search/?type=edition&offering=community))
 
-**Installation steps:** 
+**Pusher.com** 
 
 1. Create a new directory in which yo
+
+### **Data structure**
+
+
+
+
+
+### **Testing**
+A separate docker mysql ( mysql-test ) image is used to run Unit Tests.
+
