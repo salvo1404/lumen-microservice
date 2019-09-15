@@ -25,7 +25,7 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 +-- readme.md <this file>
 ```
 
-### **Setup instructions**
+#### **Setup instructions**
 
 **Prerequisites:** 
 
@@ -48,7 +48,7 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
     $ composer install
     ```
 
-2. Create a local .env and run DB migrations with seders:
+2. Create a local .env and run DB migrations with seeders:
 
     ```
     $ cp .env.example .env
@@ -61,18 +61,25 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 
 Microservice in Lumen Framework version v5.8.13
 
-#### **Design Pattern**
+#### **Repository Pattern**
 
 Model-View-Repository-Controller
 
-### **API endpoints**
+#### **API endpoints**
 
-Available endpoints
+The application integrates 5 API endpoints that allow the user to:
+
+    1 List all the Players
+    2 Create a new Player
+    3 View a single Player information
+    4 Update Player information
+    5 Delete a Player
 
 **Documentation:**
-A simple doc of the endpoints is available here  
 
-### **Broadcasting**
+A simple API Blueprint doc is available [here](https://lumenmicroserviceapis.docs.apiary.io/)
+
+#### **Broadcasting**
 
 **Prerequisites:** 
 
@@ -82,12 +89,12 @@ A simple doc of the endpoints is available here
 
 1. Create a new directory in which yo
 
-### **Data structure**
+#### **Data structure**
+
+This is the Player data structure
 
 
 
-
-
-### **Testing**
+#### **Testing**
 A separate docker mysql ( mysql-test ) image is used to run Unit Tests.
 
