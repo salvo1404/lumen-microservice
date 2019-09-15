@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "aaba8103-33aa-49cd-be5e-70c430e99c14",
+		"name": "Lumen Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Getting all players data using GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8066/authors",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8066/authors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8066",
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8066"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Jan 2019 00:04:46 +0000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Jan 2019 00:04:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Angel Toy\",\n            \"gender\": \"male\",\n            \"country\": \"Guinea\",\n            \"created_at\": \"2019-01-01 21:14:02\",\n            \"updated_at\": \"2019-01-01 21:14:02\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Prof. Arielle Roberts DVM\",\n            \"gender\": \"female\",\n            \"country\": \"Indonesia\",\n            \"created_at\": \"2019-01-01 21:14:03\",\n            \"updated_at\": \"2019-01-01 21:14:03\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Johnson Bergnaum\",\n            \"gender\": \"male\",\n            \"country\": \"Czech Republic\",\n            \"created_at\": \"2019-01-01 21:14:03\",\n            \"updated_at\": \"2019-01-01 21:14:03\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Devonte Ondricka V\",\n            \"gender\": \"male\",\n            \"country\": \"Niue\",\n            \"created_at\": \"2019-01-01 21:14:03\",\n            \"updated_at\": \"2019-01-01 21:14:03\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Judah Mante\",\n            \"gender\": \"male\",\n            \"country\": \"Timor-Leste\",\n            \"created_at\": \"2019-01-01 21:14:03\",\n            \"updated_at\": \"2019-01-01 21:14:03\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Emmie O'Conner\",\n            \"gender\": \"female\",\n            \"country\": \"India\",\n            \"created_at\": \"2019-01-01 21:14:03\",\n            \"updated_at\": \"2019-01-01 21:14:03\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Rocio Hansen\",\n            \"gender\": \"male\",\n            \"country\": \"Cocos (Keeling) Islands\",\n            \"created_at\": \"2019-01-01 21:14:03\",\n            \"updated_at\": \"2019-01-01 21:14:03\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Tressa Mohr\",\n            \"gender\": \"female\",\n            \"country\": \"Senegal\",\n            \"created_at\": \"2019-01-01 21:14:03\",\n            \"updated_at\": \"2019-01-01 21:14:03\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Dr. Golden Block\",\n            \"gender\": \"male\",\n            \"country\": \"Uruguay\",\n            \"created_at\": \"2019-01-01 21:14:04\",\n            \"updated_at\": \"2019-01-01 21:14:04\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Lucile Legros\",\n            \"gender\": \"female\",\n            \"country\": \"Paraguay\",\n            \"created_at\": \"2019-01-01 21:14:04\",\n            \"updated_at\": \"2019-01-01 21:14:04\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Ms. Judy Crist\",\n            \"gender\": \"female\",\n            \"country\": \"Christmas Island\",\n            \"created_at\": \"2019-01-01 21:14:04\",\n            \"updated_at\": \"2019-01-01 21:14:04\"\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Griffin Hintz\",\n            \"gender\": \"male\",\n            \"country\": \"Papua New Guinea\",\n            \"created_at\": \"2019-01-01 21:14:05\",\n            \"updated_at\": \"2019-01-01 21:14:05\"\n        },\n        {\n            \"id\": 13,\n            \"name\": \"Alysha Hintz\",\n            \"gender\": \"female\",\n            \"country\": \"Wallis and Futuna\",\n            \"created_at\": \"2019-01-01 21:14:05\",\n            \"updated_at\": \"2019-01-01 21:14:05\"\n        },\n        {\n            \"id\": 14,\n            \"name\": \"Greyson O'Hara\",\n            \"gender\": \"male\",\n            \"country\": \"Norway\",\n            \"created_at\": \"2019-01-01 21:14:05\",\n            \"updated_at\": \"2019-01-01 21:14:05\"\n        },\n        {\n            \"id\": 15,\n            \"name\": \"Zackary Bradtke\",\n            \"gender\": \"male\",\n            \"country\": \"Peru\",\n            \"created_at\": \"2019-01-01 21:14:05\",\n            \"updated_at\": \"2019-01-01 21:14:05\"\n        },\n        {\n            \"id\": 16,\n            \"name\": \"Dr. Theron Ledner III\",\n            \"gender\": \"male\",\n            \"country\": \"Dominica\",\n            \"created_at\": \"2019-01-01 21:14:05\",\n            \"updated_at\": \"2019-01-01 21:14:05\"\n        },\n        {\n            \"id\": 17,\n            \"name\": \"Trever Bins\",\n            \"gender\": \"male\",\n            \"country\": \"Switzerland\",\n            \"created_at\": \"2019-01-01 21:14:05\",\n            \"updated_at\": \"2019-01-01 21:14:05\"\n        },\n        {\n            \"id\": 18,\n            \"name\": \"Mr. Kennedi Gerhold MD\",\n            \"gender\": \"male\",\n            \"country\": \"Hong Kong\",\n            \"created_at\": \"2019-01-01 21:14:05\",\n            \"updated_at\": \"2019-01-01 21:14:05\"\n        },\n        {\n            \"id\": 19,\n            \"name\": \"Adell Schuster\",\n            \"gender\": \"female\",\n            \"country\": \"Djibouti\",\n            \"created_at\": \"2019-01-01 21:14:05\",\n            \"updated_at\": \"2019-01-01 21:14:05\"\n        },\n        {\n            \"id\": 20,\n            \"name\": \"Theodora Beer\",\n            \"gender\": \"female\",\n            \"country\": \"Japan\",\n            \"created_at\": \"2019-01-01 21:14:06\",\n            \"updated_at\": \"2019-01-01 21:14:06\"\n        },\n        {\n            \"id\": 21,\n            \"name\": \"Chloe Osinski I\",\n            \"gender\": \"female\",\n            \"country\": \"Western Sahara\",\n            \"created_at\": \"2019-01-01 21:14:06\",\n            \"updated_at\": \"2019-01-01 21:14:06\"\n        },\n        {\n            \"id\": 22,\n            \"name\": \"Josh Rice\",\n            \"gender\": \"male\",\n            \"country\": \"Malawi\",\n            \"created_at\": \"2019-01-01 21:14:06\",\n            \"updated_at\": \"2019-01-01 21:14:06\"\n        },\n        {\n            \"id\": 23,\n            \"name\": \"Prof. Natalia Hermann\",\n            \"gender\": \"female\",\n            \"country\": \"Jordan\",\n            \"created_at\": \"2019-01-01 21:14:06\",\n            \"updated_at\": \"2019-01-01 21:14:06\"\n        },\n        {\n            \"id\": 24,\n            \"name\": \"Piper Hintz\",\n            \"gender\": \"female\",\n            \"country\": \"Trinidad and Tobago\",\n            \"created_at\": \"2019-01-01 21:14:06\",\n            \"updated_at\": \"2019-01-01 21:14:06\"\n        },\n        {\n            \"id\": 25,\n            \"name\": \"Jalon Nitzsche Sr.\",\n            \"gender\": \"male\",\n            \"country\": \"Norfolk Island\",\n            \"created_at\": \"2019-01-01 21:14:06\",\n            \"updated_at\": \"2019-01-01 21:14:06\"\n        },\n        {\n            \"id\": 26,\n            \"name\": \"Robert Schamberger\",\n            \"gender\": \"male\",\n            \"country\": \"Antigua and Barbuda\",\n            \"created_at\": \"2019-01-01 21:14:07\",\n            \"updated_at\": \"2019-01-01 21:14:07\"\n        },\n        {\n            \"id\": 27,\n            \"name\": \"Prof. Maud Champlin\",\n            \"gender\": \"female\",\n            \"country\": \"Serbia\",\n            \"created_at\": \"2019-01-01 21:14:07\",\n            \"updated_at\": \"2019-01-01 21:14:07\"\n        },\n        {\n            \"id\": 28,\n            \"name\": \"Prof. Sienna Daugherty Sr.\",\n            \"gender\": \"female\",\n            \"country\": \"Mexico\",\n            \"created_at\": \"2019-01-01 21:14:07\",\n            \"updated_at\": \"2019-01-01 21:14:07\"\n        },\n        {\n            \"id\": 29,\n            \"name\": \"Mr. Eli Nienow Jr.\",\n            \"gender\": \"male\",\n            \"country\": \"Guinea\",\n            \"created_at\": \"2019-01-01 21:14:07\",\n            \"updated_at\": \"2019-01-01 21:14:07\"\n        },\n        {\n            \"id\": 30,\n            \"name\": \"Carter Mosciski\",\n            \"gender\": \"male\",\n            \"country\": \"United States of America\",\n            \"created_at\": \"2019-01-01 21:14:07\",\n            \"updated_at\": \"2019-01-01 21:14:07\"\n        },\n        {\n            \"id\": 31,\n            \"name\": \"Kiana Stroman\",\n            \"gender\": \"female\",\n            \"country\": \"Saint Martin\",\n            \"created_at\": \"2019-01-01 21:14:07\",\n            \"updated_at\": \"2019-01-01 21:14:07\"\n        },\n        {\n            \"id\": 32,\n            \"name\": \"Tabitha Aufderhar\",\n            \"gender\": \"female\",\n            \"country\": \"Eritrea\",\n            \"created_at\": \"2019-01-01 21:14:07\",\n            \"updated_at\": \"2019-01-01 21:14:07\"\n        },\n        {\n            \"id\": 33,\n            \"name\": \"Hollie Walsh\",\n            \"gender\": \"female\",\n            \"country\": \"Lao People's Democratic Republic\",\n            \"created_at\": \"2019-01-01 21:14:08\",\n            \"updated_at\": \"2019-01-01 21:14:08\"\n        },\n        {\n            \"id\": 34,\n            \"name\": \"Flossie Cormier\",\n            \"gender\": \"female\",\n            \"country\": \"French Polynesia\",\n            \"created_at\": \"2019-01-01 21:14:08\",\n            \"updated_at\": \"2019-01-01 21:14:08\"\n        },\n        {\n            \"id\": 35,\n            \"name\": \"Effie Feil\",\n            \"gender\": \"female\",\n            \"country\": \"Japan\",\n            \"created_at\": \"2019-01-01 21:14:08\",\n            \"updated_at\": \"2019-01-01 21:14:08\"\n        },\n        {\n            \"id\": 36,\n            \"name\": \"Samara Greenfelder\",\n            \"gender\": \"female\",\n            \"country\": \"Tunisia\",\n            \"created_at\": \"2019-01-01 21:14:08\",\n            \"updated_at\": \"2019-01-01 21:14:08\"\n        },\n        {\n            \"id\": 37,\n            \"name\": \"Amaya Block\",\n            \"gender\": \"female\",\n            \"country\": \"New Caledonia\",\n            \"created_at\": \"2019-01-01 21:14:08\",\n            \"updated_at\": \"2019-01-01 21:14:08\"\n        },\n        {\n            \"id\": 38,\n            \"name\": \"Chaz Gottlieb IV\",\n            \"gender\": \"male\",\n            \"country\": \"Cyprus\",\n            \"created_at\": \"2019-01-01 21:14:08\",\n            \"updated_at\": \"2019-01-01 21:14:08\"\n        },\n        {\n            \"id\": 39,\n            \"name\": \"Annalise Schoen\",\n            \"gender\": \"female\",\n            \"country\": \"Liberia\",\n            \"created_at\": \"2019-01-01 21:14:09\",\n            \"updated_at\": \"2019-01-01 21:14:09\"\n        },\n        {\n            \"id\": 40,\n            \"name\": \"Camila Glover\",\n            \"gender\": \"female\",\n            \"country\": \"Slovenia\",\n            \"created_at\": \"2019-01-01 21:14:09\",\n            \"updated_at\": \"2019-01-01 21:14:09\"\n        },\n        {\n            \"id\": 41,\n            \"name\": \"Emiliano Dooley\",\n            \"gender\": \"male\",\n            \"country\": \"Liechtenstein\",\n            \"created_at\": \"2019-01-01 21:14:09\",\n            \"updated_at\": \"2019-01-01 21:14:09\"\n        },\n        {\n            \"id\": 42,\n            \"name\": \"Mr. Coy Ziemann I\",\n            \"gender\": \"male\",\n            \"country\": \"Comoros\",\n            \"created_at\": \"2019-01-01 21:14:09\",\n            \"updated_at\": \"2019-01-01 21:14:09\"\n        },\n        {\n            \"id\": 43,\n            \"name\": \"Lemuel Haag\",\n            \"gender\": \"male\",\n            \"country\": \"Mozambique\",\n            \"created_at\": \"2019-01-01 21:14:09\",\n            \"updated_at\": \"2019-01-01 21:14:09\"\n        },\n        {\n            \"id\": 44,\n            \"name\": \"Keaton Zulauf\",\n            \"gender\": \"male\",\n            \"country\": \"Falkland Islands (Malvinas)\",\n            \"created_at\": \"2019-01-01 21:14:09\",\n            \"updated_at\": \"2019-01-01 21:14:09\"\n        },\n        {\n            \"id\": 45,\n            \"name\": \"Tristian Pfeffer\",\n            \"gender\": \"male\",\n            \"country\": \"Gabon\",\n            \"created_at\": \"2019-01-01 21:14:09\",\n            \"updated_at\": \"2019-01-01 21:14:09\"\n        },\n        {\n            \"id\": 46,\n            \"name\": \"Mr. Brant Jones\",\n            \"gender\": \"male\",\n            \"country\": \"Syrian Arab Republic\",\n            \"created_at\": \"2019-01-01 21:14:10\",\n            \"updated_at\": \"2019-01-01 21:14:10\"\n        },\n        {\n            \"id\": 47,\n            \"name\": \"Prof. Kristofer Conn\",\n            \"gender\": \"male\",\n            \"country\": \"Moldova\",\n            \"created_at\": \"2019-01-01 21:14:10\",\n            \"updated_at\": \"2019-01-01 21:14:10\"\n        },\n        {\n            \"id\": 48,\n            \"name\": \"Rhea Cartwright\",\n            \"gender\": \"female\",\n            \"country\": \"Malawi\",\n            \"created_at\": \"2019-01-01 21:14:10\",\n            \"updated_at\": \"2019-01-01 21:14:10\"\n        },\n        {\n            \"id\": 49,\n            \"name\": \"Mrs. Aniyah DuBuque\",\n            \"gender\": \"female\",\n            \"country\": \"Zambia\",\n            \"created_at\": \"2019-01-01 21:14:10\",\n            \"updated_at\": \"2019-01-01 21:14:10\"\n        },\n        {\n            \"id\": 50,\n            \"name\": \"Stevie Smitham\",\n            \"gender\": \"male\",\n            \"country\": \"Netherlands Antilles\",\n            \"created_at\": \"2019-01-01 21:14:10\",\n            \"updated_at\": \"2019-01-01 21:14:10\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Creating a player using POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "agla gobla",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "Point Guard",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "libero9@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/players",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"players"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Creating an author using POST",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "agla gobla",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "uganda",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8066/authors",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8066",
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "Getting infor mation of one player",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "agla gobla",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "uganda",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8066/players/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8066",
+					"path": [
+						"players",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Getting infor mation of one author",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8066/authors/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8066",
+							"path": [
+								"authors",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8066"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Jan 2019 12:56:26 +0000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Jan 2019 12:56:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Prof. Arielle Roberts DVM\",\n        \"gender\": \"female\",\n        \"country\": \"Indonesia\",\n        \"created_at\": \"2019-01-01 21:14:03\",\n        \"updated_at\": \"2019-01-01 21:14:03\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Updating player information using PUT/PATCH",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Jhon",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "male",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "libero101@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/players/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"players",
+						"19"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Updating author information using PUT/PATCH",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Jane Doe",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8066/authors/50",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8066",
+							"path": [
+								"authors",
+								"50"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8066"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Jan 2019 13:26:28 +0000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Jan 2019 13:26:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 50,\n        \"name\": \"Jane Doe\",\n        \"gender\": \"female\",\n        \"country\": \"Netherlands Antilles\",\n        \"created_at\": \"2019-01-01 21:14:10\",\n        \"updated_at\": \"2019-01-02 13:26:27\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete player details using DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost/players/19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"players",
+						"19"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete author details using DELETE",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8066/authors/51",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8066",
+							"path": [
+								"authors",
+								"51"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8066"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Jan 2019 14:56:33 +0000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 02 Jan 2019 14:56:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.1.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": 51,\n        \"name\": \"agla gobla\",\n        \"gender\": \"male\",\n        \"country\": \"uganda\",\n        \"created_at\": \"2019-01-02 00:20:04\",\n        \"updated_at\": \"2019-01-02 00:20:04\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
