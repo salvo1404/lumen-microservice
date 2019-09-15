@@ -65,7 +65,7 @@ This is a microservice built in Lumen Framework version v5.8.13
 
 The application integrates 5 API endpoints that allow the user to:
 
-    1 List all the Players
+    1 List all Players
     2 Create a new Player
     3 View a single Player information
     4 Update Player information
@@ -80,6 +80,8 @@ A simple API Blueprint doc is available [here](https://lumenmicroserviceapis.doc
 The Repository Pattern is one of the most popular patterns to create an enterprise level application.
 
 In simple terms, a repository works as a mediator between the business logic layer and the data access layer of the application.
+
+![Repository Pattern Architecture](./RepositoryPattern.png? "This is the title")
 
 Using the Repository Pattern has many advantages:
 
@@ -130,7 +132,7 @@ Lumen supports several broadcast drivers out of the box: Pusher Channels, Redis,
 **Pusher** 
 
 If you want to use pusher as broadcast provider, create an app on [pusher.com](https://pusher.com/) and add your app keys to your .env file.
-Then change your BROADCAST_DRIVER value to be 'pusher'
+Then change your BROADCAST_DRIVER value to be 'pusher'.
 
 ### **Testing**
 A separate docker mysql ( mysql-test ) image is used to run Unit Tests.
