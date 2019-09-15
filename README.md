@@ -71,6 +71,8 @@ The application integrates 5 API endpoints that allow the user to:
     4 Update Player information
     5 Delete a Player
 
+A postman collection is included [here](./Lumen%20Microservice.postman_collection.json) to test the endpoints.
+
 **Documentation:**
 
 A simple API Blueprint doc is available [here](https://lumenmicroserviceapis.docs.apiary.io/)
