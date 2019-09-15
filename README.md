@@ -17,11 +17,14 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 |   +-- nginx
 |       +-- nginx.conf
 |   +-- Dockerfile
++-- doc
+|   +-- Lumen Microservice.postman_collection.json
+|   +-- PusherBroadcastMessage.png
+|   +-- RepositoryPattern.png
 +-- src <project root>
 +-- .dockerignore
 +-- .gitignore
 +-- docker-compose.yml
-+-- Lumen Microservice.postman_collection.json
 +-- readme.md <this file>
 ```
 
@@ -71,7 +74,7 @@ The application integrates 5 API endpoints that allow the user to:
     4 Update Player information
     5 Delete a Player
 
-A postman collection is included [here](./Lumen%20Microservice.postman_collection.json) to test the endpoints.
+A postman collection is included [here](./doc/Lumen%20Microservice.postman_collection.json) to test the endpoints.
 
 **Documentation:**
 
@@ -83,7 +86,7 @@ The Repository Pattern is one of the most popular patterns to create an enterpri
 
 In simple terms, a repository works as a mediator between the business logic layer and the data access layer of the application.
 
-![Repository Pattern Architecture](./RepositoryPattern.png? "Repository Pattern Architecture")
+![Repository Pattern Architecture](./doc/RepositoryPattern.png? "Repository Pattern Architecture")
 
 Using the Repository Pattern has many advantages:
 
@@ -136,7 +139,7 @@ Lumen supports several broadcast drivers out of the box: Pusher Channels, Redis,
 If you want to use pusher as broadcast provider, create an app on [pusher.com](https://pusher.com/) and add your app keys to your .env file.
 Then change your BROADCAST_DRIVER value to be 'pusher'.
 
-![Pusher Broadcast Message](./PusherBroadcastMessage.png? "Pusher Broadcast Message")
+![Pusher Broadcast Message](./doc/PusherBroadcastMessage.png? "Pusher Broadcast Message")
 
 
 ### **Testing**
