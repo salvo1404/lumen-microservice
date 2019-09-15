@@ -11,7 +11,7 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 -  **mysql-test**, MySQL database container used for testing ( PHPUnit )
 -  **nginx**, Nginx container ([nginx](https://hub.docker.com/_/nginx/) official Docker image)
 
-#### **Directory Structure**
+### **Directory Structure**
 ```
 +-- .docker
 |   +-- nginx
@@ -25,7 +25,7 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 +-- readme.md <this file>
 ```
 
-#### **Setup instructions**
+### **Setup instructions**
 
 **Prerequisites:** 
 
@@ -61,11 +61,11 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 
 Microservice in Lumen Framework version v5.8.13
 
-#### **Repository Pattern**
+### **Repository Pattern**
 
 Model-View-Repository-Controller
 
-#### **API endpoints**
+### **API endpoints**
 
 The application integrates 5 API endpoints that allow the user to:
 
@@ -79,22 +79,25 @@ The application integrates 5 API endpoints that allow the user to:
 
 A simple API Blueprint doc is available [here](https://lumenmicroserviceapis.docs.apiary.io/)
 
-#### **Broadcasting**
+### **Broadcasting**
 
-**Prerequisites:** 
+When an player is added, updated or deleted, the service will broadcast the event to other microservices.
+Laravel supports several broadcast drivers out of the box: Pusher Channels, Redis, and a log driver for local development and debugging.
 
-* Depending on your OS, the appropriate version of Docker Community Edition has to be installed on your machine.  ([Download Docker Community Edition](https://hub.docker.com/search/?type=edition&offering=community))
+The broadcast provider of choice is pusher.
+Create an app on pusher.com to deug the functionality and your app keys to your .env 
+Here s some screenshots of the broadcasted events seen through debug console in pusher.com
 
 **Pusher.com** 
 
 1. Create a new directory in which yo
 
-#### **Data structure**
+### **Data structure**
 
 This is the Player data structure
 
 
 
-#### **Testing**
+### **Testing**
 A separate docker mysql ( mysql-test ) image is used to run Unit Tests.
 
