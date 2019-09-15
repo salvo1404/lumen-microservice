@@ -62,7 +62,11 @@ This is a dockerized stack for a Lumen microservice, consisted of the following 
 
 ## **Microservice Description**
 
-This is a microservice built in Lumen Framework version v5.8.13
+This is a microservice built in Lumen Framework version v5.8.13.
+
+The application handles a collection of Players and each Player is identified by name, email and a role ( basketball roles ).
+
+Email is a unique field in Database.
 
 ### **API endpoints**
 
