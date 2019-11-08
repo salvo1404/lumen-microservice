@@ -1,4 +1,4 @@
-# Lumen Microservice
+# Lumen Microservice [![Codacy Badge](https://api.codacy.com/project/badge/Grade/426075bb8e174be4ac92ab0711706eae)](https://www.codacy.com/manual/salvo1404/lumen-microservice?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=salvo1404/lumen-microservice&amp;utm_campaign=Badge_Grade)
 
 ## **Environment Description**
 
